@@ -1,0 +1,28 @@
+const byte ledPin = 13;       //LED comum para ser aceso ao detectarmos um objeto
+const byte sensorPin = 2;     //pino para receber o sinal do fototransistor
+volatile byte estado = HIGH;  //variável utilizada armazenar o estado do sensor. "Volatile" garante a existência da variável mesmo após a término de execução da rotina de interrupção. 
+unsigned long tempoMicros;
+
+//configurando os pinos (executado apenas uma vez)
+void setup(){
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);                                                  //definindo o pino do LED como saída
+  pinMode(sensorPin,INPUT);                                                 //definindo o pino do sensor como entrada
+  attachInterrupt(digitalPinToInterrupt(sensorPin),interrupcao,FALLING);    //Configurando a interrupção
+}
+
+//laço principal (executado infinitamente)
+void loop() {
+  estado = digitalRead(sensorPin);  //lê o estado do sensor (alto = inativo, baixo = ativo)
+  digitalWrite(ledPin,LOW);         //apaga o LED indicador de presença de objeto
+}
+
+//(executado quando atender a condição de interrupção)
+void interrupcao(){
+  tempoMicros = micros();          //obtém o tempo do microcontrolador
+  digitalWrite(ledPin,HIGH);        //acendo o LED indicador de presença de objeto
+  
+  Serial.print("Time Micros: ");
+  Serial.println(tempoMicros);
+  delay(1);
+}
