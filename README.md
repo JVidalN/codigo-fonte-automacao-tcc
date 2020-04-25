@@ -13,8 +13,8 @@ To read the article, access: [Article](https://drive.google.com/file/d/1oHT8j4KC
 
 > Demos:
 <p align="center">
-  <img src="demo/demo_without_loop.gif" width="40%">
+  <img src="demo/demo_without_loop.gif" width="30%">
 </p>
 <p align="center">
-  <img src="demo/demo_with_loop.gif" width="40%">
+  <img src="demo/demo_with_loop.gif" width="30%">
 </p>
