@@ -12,6 +12,9 @@ Technologies used: Arduino, Raspberry Pi, infrared sensors and C/C++
 To read the article, access: [Article](https://drive.google.com/file/d/1oHT8j4KCLQhX0hrWgp9vRKZFmKyHE6UW/view)
 
 > Demos:
-
-![Without loop](demo/demo_without_loop.gif)
-![With looping](demo/demo_with_loop.gif)
+<p align="center">
+  <img src="demo/demo_without_loop.gif" width="40%">
+</p>
+<p align="center">
+  <img src="demo/demo_with_loop.gif" width="40%">
+</p>
