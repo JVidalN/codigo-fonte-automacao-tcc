@@ -11,7 +11,7 @@ My project for completing the undergraduate course in information systems, where
 
 > Demos:
 <p align="center">
-  <img src="demo/demo_without_loop.gif" width="30%">
-  
-  <img src="demo/demo_with_loop.gif" width="30%">
+Without Loop | With Loop
+------------ | -------------
+  <img src="demo/demo_without_loop.gif" width="30%">|<img src="demo/demo_with_loop.gif" width="30%">
 </p>
