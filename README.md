@@ -7,12 +7,11 @@ My project for completing the undergraduate course in information systems, where
 
 > Technologies used: `Arduino`, `Raspberry Pi`, `infrared sensors` and `C/C++`
 
-To read the article, access: [Article](https://drive.google.com/file/d/1oHT8j4KCLQhX0hrWgp9vRKZFmKyHE6UW/view)
+>To read the article, access: [Article](https://drive.google.com/file/d/1oHT8j4KCLQhX0hrWgp9vRKZFmKyHE6UW/view)
 
 > Demos:
 <p align="center">
   <img src="demo/demo_without_loop.gif" width="30%">
-</p>
-<p align="center">
+  
   <img src="demo/demo_with_loop.gif" width="30%">
 </p>
